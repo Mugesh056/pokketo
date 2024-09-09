@@ -1,6 +1,6 @@
-Thanks for downloading this template!
+Thanks for Visting this Pokketo!
 
-Template Name: QuickStart
-Template URL: https://bootstrapmade.com/quickstart-bootstrap-startup-website-template/
-Author: BootstrapMade.com
-License: https://bootstrapmade.com/license/
+Template Name: Pokketo
+
+Author: Pokketo.com
+License: http://Pokketo
