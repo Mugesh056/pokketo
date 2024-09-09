@@ -1,0 +1,134 @@
+
+.container {
+  display: flex;
+  flex-direction: column;
+   max-width: 1100px; /* Set a maximum width for the container */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 10px; /* Add padding for spacing */
+ 
+}
+.vertical-navbar {
+  width: 100%;
+  background-color: #fff;
+}
+.nav-buttons {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  
+}
+.nav-link {
+  display: block;
+  text-align: center;
+  padding: 10px 20px;
+  margin: 5px 0;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+ 
+  border-top-right-radius:15px;
+  border-bottom-right-radius:15px;
+  transition: background-color 0.3s;
+  flex: 1;
+  min-width: 100px; /* Minimum width for buttons */
+  font-weight: bold; /* Make the text bold */
+}
+.nav-link:hover {
+  background-color: #0056b3;
+}
+.content-area {
+flex: 1; /* Take up remaining space */
+padding: 20px;
+background-color: #fff; /* Optional: background color for better visibility */
+overflow-y: auto; /* Enable vertical scrolling */
+display: flex;
+flex-direction: column;
+width: 100%; /* Full width by default */
+max-width: 450px; /* Maximum width for larger screens */
+height: 100%; /* Full height by default */
+max-height: 450px; /* Maximum height for larger screens */
+}
+
+/* Media query for larger screens */
+@media (min-width: 768px) {
+.content-area {
+width: 450px; /* Fixed width for larger screens */
+height: 450px; /* Fixed height for larger screens */
+max-width: none; /* Remove max-width restriction */
+max-height: none; /* Remove max-height restriction */
+}
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.card {
+  width: 100%; /* Default card width for mobile */
+  max-width: 230px; /* Restrict maximum width for larger screens */
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Increased card shadow */
+  overflow: hidden;
+}
+.card img {
+  width: 100%;
+  height: 130px; /* Adjusted image height to fit the new card size */
+  object-fit: cover;
+}
+.card-body {
+  padding: 8px; /* Adjusted padding to fit the smaller card */
+}
+
+.card-title {
+font-size: 15px; /* Updated heading font size */
+font-weight: bold;
+}
+
+.card-text {
+font-size: 12px; /* Description font size */
+}
+/* Media query for larger screens */
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row; /* Horizontal layout for larger screens */
+  }
+  .vertical-navbar {
+    width: 250px; /* Fixed width for navbar */
+  
+  }
+  .nav-buttons {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .content-area {
+    flex: 1;
+    max-height: 100vh; /* Allow content area to fill remaining height and scroll */
+  }
+  .card {
+    max-width: 230px; /* Restrict maximum width for larger screens */
+  }
+}
+
+
+/* Custom Scrollbar Styles */
+.content-area::-webkit-scrollbar {
+width: 8px; /* Reduced scrollbar width */
+}
+
+.content-area::-webkit-scrollbar-track {
+background-color: #f1f3f5; /* Scrollbar track color */
+}
+
+.content-area::-webkit-scrollbar-thumb {
+background-color: #007bff; /* Blue scrollbar color */
+border-radius: 4px; /* Rounded scrollbar thumb */
+}
+
+.content-area::-webkit-scrollbar-thumb:hover {
+background-color: #0056b3; /* Darker blue on hover */
+}

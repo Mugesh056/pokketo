@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata about character encoding and viewport settings for responsive design -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Features</title>
+    <!-- Link to Bootstrap CSS for styling and responsive layout -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Link to Font Awesome for icon fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Link to Google Material Icons for additional icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Link to custom CSS file for additional styles -->
+    <link href="assets/css/dropdown.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+    <!-- Content Wrapper -->
+    <div class="content-wrapper">
+        <!-- Navigation List (Fixed on left) -->
+        <div class="col-md-3 nav-column">
+            <!-- List of navigation items that link to different sections -->
+            <ul class="list-group">
+                <li class="list-group-item nav-item" data-target="createAccount">
+                     Create Account
+                </li>
+                <li class="list-group-item nav-item" data-target="receivePayment">
+                    Receive Payment
+                </li>
+                <li class="list-group-item nav-item" data-target="feeType">
+                    Fee Type
+                </li>
+                <li class="list-group-item nav-item" data-target="calculateGrossMargin">
+                    Calculate Gross Margin
+                </li>
+                <li class="list-group-item nav-item" data-target="shipping">
+                    Shipping
+                </li>
+                <li class="list-group-item nav-item" data-target="serviceassociates">
+                    Service Associates
+                </li>
+            </ul>
+        </div>
+
+        <!-- Content Column (Scrollable) -->
+        <div class="col-md-9 content-column">
+
+               <!-- Section for "Create Account" -->
+            <section id="createAccount" class="content-section create-account-section">
+                <div class="create-account-wrapper">
+                    <h2>Join Our E-Commerce Community and Unlock Exclusive Benefits!</h2>
+                    <p>Creating an account on our e-commerce platform is simple and offers many benefits. By signing up, Vendors can:</p>
+                    <!-- List of benefits with icons -->
+                    <ul>
+                        <li><i class="fas fa-file-invoice-dollar"></i> <strong>GST</strong></li>
+                        <li><i class="fas fa-university"></i> <strong>Bank Account</strong></li>
+                        <li><i class="fas fa-store"></i> <strong>Shop Name</strong></li>
+                        <li><i class="fas fa-map-marker-alt"></i> <strong>Location</strong></li>
+                    </ul>
+                    <p>Join us today and unlock exclusive tools, easy product listings, seamless transactions, and dedicated support. Your perfect selling experience is just a <a href="sign-up-form-url">click away!!</a></p>
+                </div>
+            </section>
+
+
+            <!-- Section for "Receive Payment" -->
+            <section id="receivePayment" class="content-section">
+                <h2>Receive Payment</h2>
+                <div class="row">
+                    <!-- Image Side -->
+                    <div class="col-md-6 col-12 mb-3 mb-md-0">
+                        <!-- Placeholder image to illustrate payment -->
+                        <img src="assets/img/v1/recive_payment-transformed.png" alt="Payment Illustration" class="img-fluid">
+                    </div>
+                    <!-- Content Side -->
+                    <div class="col-md-6 col-12">
+                        <!-- List of features for receiving payment -->
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <strong>Fast Payments:</strong> At Pokketo, we ensure fast payments by releasing them promptly after your product is dispatched.
+                            </li>
+                            <li class="list-group-item">
+                                <strong>Quick processing:</strong> Payments start processing when your product is picked up and can arrive in as fast as 5*Business days.
+                            </li>
+                            <li class="list-group-item">
+                                <strong>Secure Transfers:</strong> Money is securely transferred to your registered bank account, with Pokketo fees deducted.
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Section for "Fee Type" -->
+            <section id="feeType" class="content-section fee-type-section">
+                <h2>Fee Type</h2>
+                <!-- Description of shipping fees -->
+                <div class="fee-item">
+                   <!-- <i class="material-icons">rate_review</i>-->
+                    <div>
+                        <p>The Pokketo rate card is designed to make doing business with Pokketo cost-effective and boost your sales. It’s straightforward, easy to understand, and highly competitive.
+                        At Pokketo, fees depend on the product category, shipping method, and selling price. To view the rate card, create a seller account and check your seller dashboard.</p>
+                    </div>
+                </div>
+
+                <div class="fee-item">
+                    <i class="material-icons">local_shipping</i>
+                    <div>
+                        <h3>Shipping Fees (Weight & Location)</h3>
+                        <p>Shipping fees can vary based on the weight of the package and the delivery location. Typically, heavier packages and longer distances will incur higher shipping charges. Some platforms also offer shipping fee calculators that help estimate the cost based on weight and delivery location.</p>
+                    </div>
+                </div>
+
+                <!-- Description of commission fees -->
+                <div class="fee-item">
+                    <i class="material-icons">attach_money</i>
+                    <div>
+                        <h3>Commission Fee</h3>
+                        <p>Commission fees are charges taken by the platform or marketplace from the total sales price. This fee can be a percentage of the sale or a flat rate, and it's important to consider this when pricing your products to ensure you maintain desired profit margins.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section for "Calculate Gross Margin" -->
+            <section id="calculateGrossMargin" class="content-section gross-margin-section">
+                <h2>Calculate Gross Margin</h2>
+
+                <p>Calculating gross margin is essential for evaluating the profitability of your products. The gross margin is determined by subtracting the cost of goods sold (COGS) from total sales revenue and dividing the result by the total sales revenue. By analyzing gross margin, you can make informed decisions about pricing, discounts, and inventory management to boost your business's financial performance.</p>
+
+                <!-- Formula explanation -->
+                <div class="formula-box">
+                    <div>
+                        <p>Total Flipkart fees = Fixed Fee + Commission Fee + Shipping Fee (if applicable)</p>
+                    </div>
+                    <div>
+                        <p>Gross Margin (excluding GST) = Selling Price of Product - Total Flipkart Fees charged</p>
+                    </div>
+                </div>
+            
+                <!-- Example steps for calculating gross margin -->
+                <div class="example-steps">
+                    <div>
+                        <h3><b>Step 1</b>: Calculate Shipping Fees</h3>
+                        <p><strong>Geography:</strong> If you are selling the product from Ludhiana to a customer in Bengaluru, the national shipping cost will be applicable.</p>
+                        <p><strong>Weight:</strong> The weight of the final packed product to be measured and relevant prices to be applied.</p>
+                        <p>If the weight of the packed product is 400 grams, the shipping cost is ₹16.</p>
+                    </div>
+                    <div>
+                        <h3><b>Step 2</b>: Calculate Commission Fees</h3>
+                        <p>Apply the percentage relevant to the product. Given that the selling price here is ₹450, a 4.5% commission fee will be applicable.</p>
+                        <p>4.5% x ₹450 = ₹20.25</p>
+                    </div>
+                    <div>
+                        <h3><b>Step 3</b>: Calculate Fixed Fees</h3>
+                        <p>Since the seller here is a Gold Tier seller using FBF, the fixed fee will be ₹57.</p>
+                    </div>
+                    <div>
+                        <h3><b>Step 4</b>: Total Flipkart Fees</h3>
+                        <p>₹16 + ₹20.25 + ₹57 = ₹93.25</p>
+                    </div>
+                    <div>
+                        <h3><b>Step 5</b>: Calculate Gross Margin</h3>
+                        <p>Selling price = ₹450</p>
+                        <p>Flipkart Fees = ₹93.25</p>
+                        <p>Gross Margin = ₹450 - ₹93.25 = ₹356.75</p>
+                    </div>
+                </div>
+            </section>
+
+           
+
+            <!-- Section for "Shipping" -->
+        <section id="shipping" class="content-section shipping-section">
+             <h2>Shipping</h2>
+          <div class="row">
+          <!-- Content Side -->
+           <div class="col-md-6 col-12 mb-3 mb-md-0">
+            <p><b>Pokketo Tie-Pu partners with ShipRocket to handle its shipping, </b>ensuring secure and timely delivery of orders from the vendor location to the customer.</p>
+
+            <p><b>ShipRocket is a shipping logistics service provider.</b> It connects e-commerce stores with courier services worldwide. ShipRocket helps e-commerce businesses manage and track order shipments and returns. It operates in 220 countries and covers over 29,000 pin codes in India.</p>
+
+            <p>4 easy steps to use delhivery courier price calculator</p>
+            <ul class="tick-list">
+                <li>Enter pick-up area pincode. (<b>Vendor Shop</b>)</li>
+                <li>Provide delivery area pincode. (<b>Customer Shop</b>)</li>                
+                <li>Mention shipment weight.</li>
+                <li>Select payment mode.</li>
+            </ul>
+            <p>Upon order confirmation, ShipRocket will securely collect the order from the vendor location and ensure its safe delivery to the customer.</p>
+            
+         </div>
+        
+        <!-- Video Side -->
+        <div class="col-md-6 col-12">
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/zFah_ZBK28k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+      </div>
+      <div class="container mt-5">
+        <h2>ShipRocket Services</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title"><strong>Order Processing and Delivery</strong></h5>
+                        <ul class="tick-list">
+                            <li>Faster delivery customers to 19000+ pin codes across India</li>
+                            <li>Thorough  quality checks</li>
+                            <li>Secure packaging materials</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title"><strong>Comprehensive Tracking and Returns Support</strong></h5>
+                        <ul class="tick-list">
+                            <li>Product tracking</li>
+                            <li>End-to-end customer returns handling</li>
+                            <li>Customer returns support</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title"><strong>Warehouse and Quality Services Provide</strong></h5>
+                        <ul class="tick-list">
+                            <li>Warehouse space</li>
+                            <li>Quality selection recommendations</li>
+                            <li>Quality packaging materials</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+          </div>
+         <div>
+          <p>Note : The figures provided are for illustrative purposes and may vary based on services, dimensions, and other factors. For accurate and current fee information, please log into your Pokketo seller account to view specific fees related to your products and transactions.</p>
+          </div>
+          </div>
+        </section>
+
+       <section id="serviceassociates" class="content-section gross-margin-section">
+        <div class="fee-item">
+            <div>
+                <h1>Pokketo Partner Services</h1>
+                <p>Pokketo offers a wide range of services from verified partners to support sellers in building their online businesses. Simplify your journey as a seller with Pokketo Partner Services and get the support you need to thrive in the online marketplace.</p>
+                <br></br>
+                <ul class="tick-list">
+                    <li><strong>Taxation</strong> – Assistance with tax compliance and filing.</li>
+                    <li><strong>Accounting</strong> – Financial management and bookkeeping.</li>                
+                    <li><strong>Imaging</strong> – Product photography and image editing.</li>
+                    <li><strong>Marketing Support</strong> – Promotional strategy and campaign assistance.</li>
+                    <li><strong>Vendor Product Management</strong> – Managing and optimizing vendor product listings.</li>
+                    <li><strong>Software Solutions</strong> – Business operation software tools.</li>                
+                    <li><strong>Support for Vendor & Customer</strong> – Customer service for vendors and customers.</li>
+                  </ul>
+                <P>Pokketo offers a comprehensive suite of services to support your e-commerce business.</P>
+            </div>
+        </div>
+       </section>
+
+
+        </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle with Popper for interactive components -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS for dropdown functionality -->
+    <script src="assets/js/dropdown.js"></script>
+</body>
+</html>

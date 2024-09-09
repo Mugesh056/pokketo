@@ -1,0 +1,336 @@
+/* Ensure content wrapper adjusts correctly */
+.content-wrapper {
+    display: flex;
+    margin-top: 0; /* No margin needed if no navbar */
+    overflow: hidden; /* Prevent horizontal scroll */
+}
+
+body {
+    background-color: #FEFDED ; /* Set your desired background color here */
+    font-family: "Trirong", serif;
+}
+
+/* Fixed Sidebar */
+.nav-column {
+    width: 250px; /* Fixed width */
+    position: fixed;
+    top: 0; /* Align with top of viewport */
+    bottom: 0;
+    overflow-y: auto;
+    padding: 15px; /* Optional: Padding for better appearance */
+    background-color: #fff; /* Background color for the sidebar */
+}
+
+/* Content Column */
+.content-column {
+    margin-left: 250px; /* Offset for the fixed sidebar */
+    padding: 20px;
+    flex-grow: 1;
+    height: 100vh; /* Full viewport height */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+/* Section Styling */
+.content-section {
+    margin-bottom: 40px; /* Space between sections */
+}
+
+.split-layout {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.split-layout img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.split-layout .content {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.split-layout .content .list-group-item {
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f8f9fa;
+}
+
+.split-layout .content .list-group-item strong {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.nav-item {
+    cursor: pointer;
+    position: relative;
+    padding-left: 40px;
+    transition: background-color 0.3s ease;
+    border: none; /* Remove border */
+}
+
+.nav-item:hover, .nav-item.active {
+    border: 1px solid black; /* Optional: Border on hover */
+}
+
+.active-icon {
+    position: absolute;
+    left: 10px;
+    font-weight: bold;
+    display: none;
+}
+
+.nav-item.active .active-icon {
+    display: inline;
+}
+
+/* Fee Type Section Styling */
+.fee-type-section {
+    margin-top: 20px;
+}
+
+.fee-type-section h2 {
+    margin-bottom: 20px;
+}
+
+.fee-type-section .fee-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* Increased margin for better spacing */
+}
+
+.fee-type-section .fee-item i {
+    font-size: 24px;
+    color: #0d6efd;
+    margin-right: 15px;
+}
+
+.fee-type-section .fee-item h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.fee-type-section .fee-item h3:hover {
+    color: #0d6efd;
+    text-decoration: underline;
+}
+
+.fee-type-section .fee-item p {
+    margin: 5px 0;
+    color: #555;
+}
+
+/* Calculate Gross Margin Section Styling */
+.gross-margin-section {
+    border: 2px solid #fff;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+.gross-margin-section h2 {
+    margin-bottom: 20px;
+}
+
+.gross-margin-section .formula-box {
+    margin-bottom: 20px;
+}
+
+.gross-margin-section .formula-box div {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 15px;
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+
+.gross-margin-section .formula-box p {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.gross-margin-section p {
+    margin: 0;
+    font-size: 16px;
+    color: #555;
+}
+
+.example-steps div {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 15px;
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+
+.example-steps h3 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.example-steps p {
+    margin: 0;
+    font-size: 16px;
+    color: #555;
+}
+
+.gross-margin-section {
+    border: 2px solid #fff;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    margin: 40px 0; /* Add space around the section */
+}
+
+.create-account-wrapper {
+    padding: 20px; /* Add padding inside the wrapper */
+    background-color: #f8f9fa; /* Light background color for the wrapper */
+    border-radius: 8px; /* Rounded corners for the wrapper */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow for a subtle 3D effect */
+}
+
+.create-account-section ul {
+    margin-top: 10px; /* Space above the list */
+    margin-bottom: 20px; /* Space below the list */
+    padding-left: 30px; /* Indent the list to the right */
+    list-style-type: none; /* Remove default list bullets */
+}
+
+.create-account-section li {
+    margin-bottom: 15px; /* Space between list items */
+    font-size: 16px; /* Adjust the font size for readability */
+    line-height: 1.6; /* Space out lines for better readability */
+    color: #333; /* Text color */
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Vertically center items */
+    text-align: justify; /* Justify the text */
+}
+
+.create-account-section li i {
+    margin-right: 12px; /* Space between icon and text */
+    color: #0d6efd; /* Icon color */
+    font-size: 20px; /* Icon size */
+    flex-shrink: 0; /* Prevent icon from shrinking */
+}
+
+.create-account-section h2 {
+    margin-bottom: 15px; /* Space below the heading */
+    font-size: 24px; /* Heading font size */
+    color: #0d6efd; /* Heading color */
+}
+
+.create-account-section p {
+    margin-bottom: 15px; /* Space below paragraphs */
+    text-align: justify; /* Justify paragraph text */
+}
+
+@media (max-width: 768px) {
+    /* Hide the sidebar on mobile screens */
+    .nav-column {
+        display: none;
+    }
+
+    /* Adjust content margin for mobile screens */
+    .content-column {
+        margin-left: 0; /* Remove left margin on mobile */
+    }
+}
+
+
+
+
+
+/* Responsive image */
+img.img-fluid {
+max-width: 100%;
+height: auto;
+}
+
+/* Ensure margin is handled correctly */
+.mb-3 {
+margin-bottom: 1rem !important;
+}
+
+.mb-md-0 {
+margin-bottom: 0 !important;
+}
+
+/* Section Styling */
+.content-section {
+padding: 20px;
+}
+
+.split-layout {
+display: flex;
+flex-wrap: wrap;
+}
+
+.image-side {
+flex: 1;
+}
+
+.content {
+flex: 1;
+}
+
+.list-group-item {
+border: none;
+border-radius: 15px;
+padding: 15px;
+margin-bottom: 10px;
+background-color: #f8f9fa;
+}
+
+h2 {
+margin-bottom: 20px;
+}
+
+/* Custom styles for the video container */
+.video-container {
+    border: 2px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 100%; /* Ensure responsiveness */
+    overflow: hidden; /* Hide overflow to prevent scroll bars */
+}
+
+/* Adjust the size of the iframe */
+.video-container iframe {
+    width: 100%;
+    height: 280px; /* Adjust height as needed */
+    border: none; /* Remove default border */
+}
+/* Style for list items with tick icon */
+.tick-list {
+    list-style-type: none; /* Remove default list bullets */
+    padding-left: 0; /* Remove default padding */
+}
+
+.tick-list li {
+    position: relative;
+    padding-left: 25px; /* Space for the tick icon */
+    margin-bottom: 10px; /* Space between list items */
+}
+
+.tick-list li::before {
+    content: "\2713"; /* Unicode for check mark */
+    position: absolute;
+    left: 0;
+    color: green; /* Adjust color as needed */
+    font-size: 18px; /* Adjust size as needed */
+    line-height: 1; /* Align the tick with text */
+}
+
+.font{
+  font-weight:900;
+}
