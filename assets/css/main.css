@@ -2076,7 +2076,6 @@ section,
 /*--------------------------------------------------------------
 # END OUT TEAM
 --------------------------------------------------------------*/
-
 /* Style the dropdown button */
 .btn-getstarted {
   background-color: #ff6b6b; /* Match your existing "Get Started" button color */
@@ -2095,17 +2094,15 @@ section,
 
 /* Style the dropdown menu */
 .dropdown-menu {
-  padding-top: 10px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(150, 22, 22, 0.1); /* Add subtle shadow */
-
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
 }
 
 /* Style the dropdown items */
 .dropdown-item {
   color: #333; /* Text color for items */
   padding: 10px 20px;
-  font-size: 16px;
+  font-size: 14px;
   transition: background-color 0.3s ease;
 }
 
@@ -2113,15 +2110,6 @@ section,
 .dropdown-item:hover {
   background-color: #f1f1f1; /* Light background on hover */
 }
-
-.dropdown-menu.show {
-  background: transparent; /* Ensure no background color is added */
-  box-shadow: none; /* Remove any box shadow if present */
-}
-
-
-
-
 /* Basic styles for dropdown items */
 .dropdown-item {
   position: relative;
@@ -2147,8 +2135,6 @@ section,
 .dropdown-item:hover::after {
   transform: scaleX(1);
 }
-
-
 
 
 /* Style the dropdown button END */
