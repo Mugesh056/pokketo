@@ -120,7 +120,7 @@
                     <i class="material-icons">attach_money</i>
                     <div>
                         <h3>Commission Fee</h3>
-                        <p>Commission fees are charges taken by the platform or marketplace from the total sales price. This fee can be a percentage of the sale or a flat rate, and it's important to consider this when pricing your products to ensure you maintain desired profit margins.</p>
+                        <p>Pokketo's commission fees are charges deducted by the platform from the total sales price, based on product type and category. These transparent and competitive rates help vendors scale their business while ensuring profitability.</p>
                     </div>
                 </div>
             </section>
@@ -133,11 +133,12 @@
 
                 <!-- Formula explanation -->
                 <div class="formula-box">
+                    <!--<div>
+                        <p>Pokketo takes a % commission based on the product price.</p>
+                        <P>Pokketo Fees=Product Price×(Commission Percentage/100)</P>
+                    </div>-->
                     <div>
-                        <p>Total Flipkart fees = Fixed Fee + Commission Fee + Shipping Fee (if applicable)</p>
-                    </div>
-                    <div>
-                        <p>Gross Margin (excluding GST) = Selling Price of Product - Total Flipkart Fees charged</p>
+                        <p>Gross Margin (excluding GST) = Selling Price of Product - Pokketo Fees charged</p>
                     </div>
                 </div>
             
@@ -145,28 +146,30 @@
                 <div class="example-steps">
                     <div>
                         <h3><b>Step 1</b>: Calculate Shipping Fees</h3>
-                        <p><strong>Geography:</strong> If you are selling the product from Ludhiana to a customer in Bengaluru, the national shipping cost will be applicable.</p>
-                        <p><strong>Weight:</strong> The weight of the final packed product to be measured and relevant prices to be applied.</p>
-                        <p>If the weight of the packed product is 400 grams, the shipping cost is ₹16.</p>
+                        <p>Shipping fees are calculated dynamically based on the product's distance and weight. However, a minimum default shipping charge of ₹60 is always applied to ensure fair pricing for all transactions, regardless of conditions.</p>
+                        <p><strong>Ex: </strong>If the total calculated shipping fee for a product is ₹100, but the customer is only charged a default shipping fee of ₹60, Vendor will need to cover the remaining amount.</p>
+                        <p><strong>Ex: </strong>Shipping Fees = 60</p>
                     </div>
                     <div>
-                        <h3><b>Step 2</b>: Calculate Commission Fees</h3>
-                        <p>Apply the percentage relevant to the product. Given that the selling price here is ₹450, a 4.5% commission fee will be applicable.</p>
-                        <p>4.5% x ₹450 = ₹20.25</p>
+                        <h3><b>Step 2</b>: Selling Price (Including GST)</h3>
+                        <p><strong>Price=Product Price+(Product Price × GST Rate)+Shipping Fees</strong> </p>
+                        <p><strong>Ex:</strong> Price=200+(200 × 0.18)+60 =200+36+60 = 296</p>
                     </div>
                     <div>
-                        <h3><b>Step 3</b>: Calculate Fixed Fees</h3>
-                        <p>Since the seller here is a Gold Tier seller using FBF, the fixed fee will be ₹57.</p>
+                        <h3><b>Step 3</b>: Pokketo Commission Fees</h3>
+                        <p>Pokketo takes a % commission based on the <b>Product Price</b>.</p>
+                        <p><Strong>Pokketo Fees=Product Price×(Commission Percentage/100)</Strong></p>
+                        <p><strong>Ex: </strong>Pokketo Fees=200×(0.10/100) = 20</p>
                     </div>
-                    <div>
+                   <!-- <div>
                         <h3><b>Step 4</b>: Total Flipkart Fees</h3>
                         <p>₹16 + ₹20.25 + ₹57 = ₹93.25</p>
-                    </div>
+                    </div>-->
                     <div>
                         <h3><b>Step 5</b>: Calculate Gross Margin</h3>
-                        <p>Selling price = ₹450</p>
-                        <p>Flipkart Fees = ₹93.25</p>
-                        <p>Gross Margin = ₹450 - ₹93.25 = ₹356.75</p>
+                        <p>Selling price = ₹396</p>
+                        <p>Pokketo Fees  = ₹20</p>
+                        <p>Gross Margin  = ₹396 - ₹20 = ₹376</p>
                     </div>
                 </div>
             </section>
